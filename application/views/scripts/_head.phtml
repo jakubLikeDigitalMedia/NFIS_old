@@ -1,0 +1,33 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: jacob
+ * Date: 09/12/2013
+ * Time: 17:00
+ */
+
+$this->doctype('XHTML1_TRANSITIONAL');
+print $this->doctype();
+?>
+<html>
+<head>
+<?php
+// set meta tags
+$this->headMeta()->setName('description', 'Intranet System');
+$this->headMeta()->setName('author', 'Like Digital Media');
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html; charset=UTF-8')->appendHttpEquiv('Content-Language', 'en-UK');
+
+$this->headLink()->appendStylesheet('base.css');
+
+//print meta tags
+print $this->headTitle();
+print $this->headmeta();
+
+print $this->headLink();
+print $this->headScript();
+
+
+
+?>
+</head>
+<body>
